@@ -1,0 +1,43 @@
+# ROS 2 build outputs — generated on Jetson
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Microcontroller local build directories
+firmware/motor_controller/.pio/
+firmware/motor_controller/bin/
+
+# Runtime sensor data — generated on Jetson
+data/rosbag/*
+data/lidar/*
+data/camera/*
+data/odometry/*
+data/experiments/*
+
+# Generated results
+results/control/*
+results/localization/*
+results/mapping/*
+results/navigation/*
+results/reports/*
+
+# Keep empty directories in Git
+!data/rosbag/.gitkeep
+!data/lidar/.gitkeep
+!data/camera/.gitkeep
+!data/odometry/.gitkeep
+!data/experiments/.gitkeep
+
+!results/control/.gitkeep
+!results/localization/.gitkeep
+!results/mapping/.gitkeep
+!results/navigation/.gitkeep
+!results/reports/.gitkeep
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
